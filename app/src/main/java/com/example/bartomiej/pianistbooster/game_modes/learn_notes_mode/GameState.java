@@ -28,7 +28,7 @@ public class GameState {
         public int rangeOnLevelBassLo;
         public int rangeOnLevelBassHi;
 
-        public boolean semitonesOnLevel;
+        public int semitonesOnLevel;
 
         public Level(
                 int scoreToLevel,
@@ -38,7 +38,7 @@ public class GameState {
                 int rangeOnLevelTrembleHi,
                 int rangeOnLevelBassLo,
                 int rangeOnLevelBassHi,
-                boolean semitonesOnLevel
+                int semitonesOnLevel
         ) {
             this.scoreToLevel = scoreToLevel;
             this.scoreOnLevel = scoreOnLevel;
@@ -66,7 +66,7 @@ public class GameState {
                 51,
                 27,
                 39,
-                false
+                0
         );
         levels[1] = new Level(
                 15,
@@ -76,7 +76,7 @@ public class GameState {
                 51,
                 27,
                 39,
-                false
+                0
         );
         levels[2] = new Level(
                 50,
@@ -86,7 +86,7 @@ public class GameState {
                 51,
                 27,
                 39,
-                false
+                0
         );
         levels[3] = new Level(
                 100,
@@ -96,7 +96,7 @@ public class GameState {
                 51,
                 27,
                 39,
-                false
+                0
         );
 
 
@@ -108,7 +108,7 @@ public class GameState {
                 51,
                 27,
                 39,
-                true
+                1
         );
         levels[5] = new Level(
                 300,
@@ -118,7 +118,7 @@ public class GameState {
                 51,
                 27,
                 39,
-                true
+                1
         );
         levels[6] = new Level(
                 450,
@@ -128,7 +128,7 @@ public class GameState {
                 51,
                 27,
                 39,
-                true
+                1
         );
         levels[7] = new Level(
                 700,
@@ -138,7 +138,7 @@ public class GameState {
                 51,
                 27,
                 39,
-                true
+                1
         );
 
 
@@ -150,7 +150,7 @@ public class GameState {
                 63,
                 15,
                 39,
-                false
+                0
         );
         levels[9] = new Level(
                 1200,
@@ -160,7 +160,7 @@ public class GameState {
                 63,
                 15,
                 39,
-                false
+                0
         );
         levels[10] = new Level(
                 1450,
@@ -170,7 +170,7 @@ public class GameState {
                 63,
                 15,
                 39,
-                false
+                0
         );
         levels[11] = new Level(
                 1700,
@@ -180,7 +180,7 @@ public class GameState {
                 63,
                 15,
                 39,
-                false
+                0
         );
 
 
@@ -192,7 +192,7 @@ public class GameState {
                 63,
                 15,
                 39,
-                true
+                1
         );
         levels[13] = new Level(
                 2500,
@@ -202,7 +202,7 @@ public class GameState {
                 63,
                 15,
                 39,
-                true
+                1
         );
         levels[14] = new Level(
                 2900,
@@ -212,7 +212,7 @@ public class GameState {
                 63,
                 15,
                 39,
-                true
+                1
         );
         levels[15] = new Level(
                 3400,
@@ -222,7 +222,7 @@ public class GameState {
                 63,
                 15,
                 39,
-                true
+                1
         );
 
 
@@ -234,7 +234,7 @@ public class GameState {
                 63,
                 15,
                 46,
-                false
+                0
         );
         levels[17] = new Level(
                 4000,
@@ -244,7 +244,7 @@ public class GameState {
                 63,
                 15,
                 46,
-                false
+                0
         );
         levels[18] = new Level(
                 4400,
@@ -254,7 +254,7 @@ public class GameState {
                 63,
                 15,
                 46,
-                false
+                0
         );
         levels[19] = new Level(
                 5000,
@@ -264,7 +264,7 @@ public class GameState {
                 63,
                 15,
                 46,
-                false
+                0
         );
 
         levels[20] = new Level(
@@ -275,7 +275,7 @@ public class GameState {
                 63,
                 15,
                 46,
-                true
+                1
         );
         levels[21] = new Level(
                 7000,
@@ -285,7 +285,7 @@ public class GameState {
                 63,
                 15,
                 46,
-                true
+                1
         );
         levels[22] = new Level(
                 8500,
@@ -295,7 +295,7 @@ public class GameState {
                 63,
                 15,
                 46,
-                true
+                1
         );
         levels[23] = new Level(
                 10000,
@@ -305,19 +305,19 @@ public class GameState {
                 63,
                 15,
                 46,
-                true
+                1
         );
 
 
         levels[24] = new Level(
                 50000,
                 100,
-                1,
+                2,
                 39,
                 51,
                 27,
                 39,
-                true
+                2
         );
         levels[25] = new Level(
                 100000,
@@ -327,18 +327,18 @@ public class GameState {
                 51,
                 27,
                 39,
-                true
+                2
         );
 
         levels[26] = new Level(
                 200000,
                 500,
-                1,
+                2,
                 39,
                 63,
                 15,
                 39,
-                false
+                2
         );
         levels[27] = new Level(
                 300000,
@@ -348,17 +348,17 @@ public class GameState {
                 63,
                 15,
                 39,
-                true
+                2
         );
         levels[28] = new Level(
                 500000,
                 3000,
-                1,
+                2,
                 32,
                 63,
                 15,
                 46,
-                false
+                2
         );
         levels[29] = new Level(
                 1000000,
@@ -368,7 +368,7 @@ public class GameState {
                 63,
                 15,
                 46,
-                true
+                2
         );
 
         /*
@@ -480,7 +480,10 @@ public class GameState {
                 Log.v("getNextNote", "Error: generated clef is neither TREMBLE nor BASS");
                 throw new IndexOutOfBoundsException("Error: generated clef is neither TREMBLE nor BASS");
             }
-        } while(levels[level].semitonesOnLevel == false && PianoFrequencies.getTypeOfNote(noteId) == PianoFrequencies.BLACK_KEY);
+        } while(
+                (levels[level].semitonesOnLevel == 0 && PianoFrequencies.getTypeOfNote(noteId) == PianoFrequencies.BLACK_KEY) ||
+                (levels[level].semitonesOnLevel == 1 && PianoFrequencies.getTypeOfNote(noteId) == PianoFrequencies.WHITE_KEY)
+                );
 
         int typeOfSemitone = 0;
         if(PianoFrequencies.getTypeOfNote(noteId) == PianoFrequencies.BLACK_KEY) {
