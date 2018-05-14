@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ChooseModeActivity">
 
     <Button
         android:id="@+id/notesShow"
@@ -12,27 +12,31 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="141dp"
         android:layout_marginEnd="67dp"
+        android:layout_marginLeft="67dp"
+        android:layout_marginRight="67dp"
         android:layout_marginStart="67dp"
-        android:layout_marginTop="8dp"
-        android:onClick="clickPlayButton"
-        android:text="PLAY"
+        android:layout_marginTop="70dp"
+        android:onClick="clickFreestyleButton"
+        android:text="FREESTYLE"
         app:layout_constraintBottom_toTopOf="@+id/back"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.117" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/stats"
+        android:id="@+id/staffMode"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="67dp"
+        android:layout_marginLeft="67dp"
+        android:layout_marginRight="67dp"
         android:layout_marginStart="67dp"
         android:layout_marginTop="8dp"
-        android:onClick="clickStatsButton"
-        android:text="STATISTICS"
+        android:onClick="clickStaffModeButton"
+        android:text="STAFF MODE"
         app:layout_constraintBottom_toTopOf="@+id/back"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -43,14 +47,15 @@
         android:id="@+id/back"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="50dp"
         android:layout_marginEnd="67dp"
+        android:layout_marginLeft="67dp"
+        android:layout_marginRight="67dp"
         android:layout_marginStart="67dp"
-        android:onClick="clickAboutButton"
-        android:text="ABOUT"
+        android:onClick="clickBackButton"
+        android:text="BACK"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
-
 </android.support.constraint.ConstraintLayout>
