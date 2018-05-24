@@ -9,4 +9,4 @@ Udostępnia dwa tryby:
 2. Staff mode - umożliwia naukę nut w formie gry. Wyświetla na pięciolinii nutę, którą należy zagrać. Po każdej nucie wyświetlana jest kolejna. Im więcej nut się poprawnie zagra tym więcej zdobywa się punktów i tym trudniejsze nuty oraz mniej czasu ma się na zagranie kolejnej nuty.
 
 
-* Aktualnie aplikacja rozpoznaje pojedyncze nuty i zależna jest od poziomu nastrojenia pianina. *
+Aktualnie aplikacja rozpoznaje pojedyncze nuty i zależna jest od poziomu nastrojenia pianina.
