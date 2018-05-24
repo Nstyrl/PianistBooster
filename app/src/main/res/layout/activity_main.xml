@@ -10,63 +10,28 @@
         android:id="@+id/notesShow"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="141dp"
         android:layout_marginEnd="67dp"
-        android:layout_marginLeft="67dp"
-        android:layout_marginRight="67dp"
         android:layout_marginStart="67dp"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="80dp"
         android:onClick="clickPlayButton"
         android:text="PLAY"
-        app:layout_constraintBottom_toTopOf="@+id/back"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/stats"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
         android:layout_marginEnd="67dp"
-        android:layout_marginLeft="67dp"
-        android:layout_marginRight="67dp"
         android:layout_marginStart="67dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="100dp"
         android:onClick="clickStatsButton"
         android:text="STATISTICS"
-        app:layout_constraintBottom_toTopOf="@+id/back"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/notesShow" />
 
-    <Button
-        android:id="@+id/back"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="156dp"
-        android:layout_marginEnd="67dp"
-        android:layout_marginStart="67dp"
-        android:onClick="clickAboutButton"
-        android:text="ABOUT"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/tests"
-        android:layout_width="243dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginTop="8dp"
-        android:onClick="clickTestsButton"
-        android:text="TESTS"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/back" />
 </android.support.constraint.ConstraintLayout>
